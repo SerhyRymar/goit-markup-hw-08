@@ -1,0 +1,80 @@
+/* Список особеностей компании */
+
+.features {
+	display: flex;
+}
+.features__item {
+	max-width: 270px;
+	&:not(:last-child) {
+		margin-right: 30px;
+		max-width: 270px;
+	}
+}
+.features__container {
+	width: 270px;
+	height: 120px;
+	background: #f5f4fa;
+	border-radius: 4px;
+	margin-bottom: 30px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.features__subtitle {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+	color: var(--primary-text-color);
+}
+.features__text {
+	font-size: 14px;
+	line-height: 2;
+	color: var(--second-text-color);
+
+	margin-top: 10px;
+}
+
+/* ----------Продукция сайта---------- */
+
+.product {
+	padding-top: 0px;
+}
+
+.product__title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	color: var(--primary-text-color);
+}
+
+.product__list {
+	display: flex;
+	margin-top: 50px;
+}
+.product__item {
+	margin-right: 30px;
+	position: relative;
+	&:nth-child(3n) {
+		margin-right: 0;
+	}
+}
+
+.product__text {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	padding-top: 27px;
+	padding-bottom: 27px;
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--primary-white-color);
+	background-color: rgba(47, 48, 58, 0.8);
+}

@@ -1,0 +1,142 @@
+/* --------------------------------FOOTER--------------------------------- */
+.footer {
+	background: var(--accent-section-color);
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.footer__conteiner {
+	display: flex;
+	align-items: baseline;
+}
+.footer__logo {
+	display: block;
+	margin-bottom: 20px;
+}
+.logo--white-color {
+	color: var(--primary-white-color);
+}
+.address__list {
+	font-style: normal;
+	display: block;
+}
+.address__item {
+	display: flex;
+	margin-bottom: 9px;
+}
+.adress__text {
+	display: block;
+	font-size: 14px;
+	line-height: 1.7;
+	color: var(--primary-white-color);
+}
+.address__contact {
+	font-size: 14px;
+	line-height: 1.17;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+/* -----------------Секция Наши социальные сети--------------- */
+
+.footer-socials {
+	display: block;
+	margin-left: 70px;
+}
+.footer-socials__title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--primary-white-color);
+	margin-bottom: 20px;
+}
+.footer-social__list {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+.footer-social__link {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	transition: background-color 250ms var(--timing-function);
+	&:hover,
+    &:focus {
+	background-color: var(--accent-color);}
+}
+
+.footer-social__icon {
+	fill: var(--primary-white-color);
+	transition: fill 250ms var(--timing-function);
+}
+
+/* ---------------Секция Подписка--------------- */
+
+.subscription {
+	display: block;
+	margin-left: 73px;
+}
+.subscription__title {
+	display: flex;
+	margin-bottom: 20px;
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--primary-white-color);
+}
+.subscription__label {
+	background: #2f303a;
+}
+.subscription__input {
+	width: 358px;
+	height: 50px;
+	padding-left: 16px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	background-color: #2f303a;
+	&:focus,
+    &:hover {
+	border-color: 1px solid rgba(255, 255, 255, 0.3);
+}
+}
+.subscription__input:focus,
+.subscription__input:hover {
+	border-color: 1px solid rgba(255, 255, 255, 0.3);
+}
+.subscription__button {
+	display: inline-flex;
+	align-items: center;
+
+	margin-left: 12px;
+	width: 200px;
+	height: 50px;
+	padding-left: 28px;
+	padding-right: 28px;
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+	background: #2196f3;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	border: none;
+	color: var(--primary-white-color);
+	cursor: pointer;
+}
+.subscription__icon {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin-left: 10px;
+	fill: var(--primary-white-color);
+}

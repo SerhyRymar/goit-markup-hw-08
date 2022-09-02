@@ -1,0 +1,78 @@
+/* ----------Команда---------- */
+
+.team {
+	background: #f5f4fa;
+}
+.team__title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	color: var(--primary-text-color);
+
+	text-align: center;
+	padding-bottom: 0;
+}
+
+.team__list {
+	display: flex;
+	margin-top: 50px;
+	gap: 30px;
+}
+.team__item {
+	background-color: var(--primary-white-color);
+
+	width: 270px;
+	height: 428px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+}
+.employees {
+	padding: 30px;
+}
+.employees__name {
+	text-align: center;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+	margin-bottom: 10px;
+}
+.employees__job {
+	text-align: center;
+	margin-bottom: 16px;
+
+	font-size: 16px;
+	line-height: 1.19;
+	color: var(--second-text-color);
+}
+
+.social-list {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+.social-list__link {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background-color: var(--primary-white-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	transition: background-color 250ms var(--timing-function);
+	&:hover,
+	&:focus {
+		background-color: var(--accent-color);
+	}
+}
+
+.social-list__icon {
+	fill: var(--primary-icon-color);
+
+	transition: fill 250ms var(--timing-function);
+	.social-list__link:hover &,
+	.social-list__link:focus & {
+		fill: var(--primary-white-color);
+	}
+}

@@ -1,0 +1,13 @@
+/* -------------------Header-------------------------- */
+.header {
+	background-color: var(--primary-white-color);
+	padding-top: 24px;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #ececec;
+	justify-content: center;
+}
+
+.header__container {
+	display: flex;
+	align-items: center;
+}
