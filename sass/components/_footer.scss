@@ -3,24 +3,32 @@
 	background: var(--accent-section-color);
 	padding-top: 60px;
 	padding-bottom: 60px;
+	display: flex;
 }
+
 .footer__conteiner {
 	display: flex;
-	align-items: baseline;
 }
 .footer__logo {
-	display: block;
+	display: flex;
+	justify-content: center;
 	margin-bottom: 20px;
 }
 .logo--white-color {
 	color: var(--primary-white-color);
+}
+
+.address {
+	display: block;
+	justify-content: center;
+	text-align: center;
 }
 .address__list {
 	font-style: normal;
 	display: block;
 }
 .address__item {
-	display: flex;
+	// display: flex;
 	margin-bottom: 9px;
 }
 .adress__text {
@@ -38,10 +46,11 @@
 /* -----------------Секция Наши социальные сети--------------- */
 
 .footer-socials {
-	display: block;
-	margin-left: 70px;
+	display: flex;
+	margin-left: 0px;
 }
 .footer-socials__title {
+	text-align: center;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
@@ -66,8 +75,9 @@
 
 	transition: background-color 250ms var(--timing-function);
 	&:hover,
-    &:focus {
-	background-color: var(--accent-color);}
+	&:focus {
+		background-color: var(--accent-color);
+	}
 }
 
 .footer-social__icon {
@@ -79,11 +89,11 @@
 
 .subscription {
 	display: block;
-	margin-left: 73px;
+	justify-content: center;
 }
 .subscription__title {
-	display: flex;
 	margin-bottom: 20px;
+	text-align: center;
 
 	font-weight: 700;
 	font-size: 14px;
@@ -92,11 +102,17 @@
 	text-transform: uppercase;
 	color: var(--primary-white-color);
 }
+.subscription__form {
+	display: block;
+	justify-content: center;
+}
 .subscription__label {
 	background: #2f303a;
 }
 .subscription__input {
-	width: 358px;
+	display: flex;
+
+	width: 100%;
 	height: 50px;
 	padding-left: 16px;
 	border: 1px solid rgba(255, 255, 255, 0.3);
@@ -104,19 +120,20 @@
 	border-radius: 4px;
 	background-color: #2f303a;
 	&:focus,
-    &:hover {
-	border-color: 1px solid rgba(255, 255, 255, 0.3);
-}
+	&:hover {
+		border-color: 1px solid rgba(255, 255, 255, 0.3);
+	}
 }
 .subscription__input:focus,
 .subscription__input:hover {
 	border-color: 1px solid rgba(255, 255, 255, 0.3);
 }
 .subscription__button {
-	display: inline-flex;
+	display: flex;
 	align-items: center;
-
-	margin-left: 12px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
 	width: 200px;
 	height: 50px;
 	padding-left: 28px;
