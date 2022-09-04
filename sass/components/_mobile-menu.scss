@@ -1,0 +1,27 @@
+/* -----Мобильное меню----- */
+.mobile-open-btn {
+	margin-left: auto;
+	margin-right: 10px;
+}
+.mobile-menu {
+	position: fixed;
+	z-index: 1;
+	background-color: var(--primary-white-color);
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vw;
+	padding-top: 10px;
+}
+.mobile-close-btn {
+	display: block;
+	margin-left: auto;
+	margin-right: 15px;
+}
+.mobile-menu__item {
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 47px;
+	letter-spacing: 0.02em;
+	color: var(--primary-text-color);
+}

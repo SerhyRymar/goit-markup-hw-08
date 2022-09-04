@@ -125,8 +125,13 @@ img {
 .logo__text {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.2;
+}
+@media screen and (min-width: 1200px) {
+  .logo__text {
+    font-size: 26px;
+  }
 }
 
 .logo--accent-color {
@@ -143,6 +148,7 @@ img {
   align-items: center;
   margin-right: 0;
   padding-right: 0;
+  display: none;
 }
 
 .menu__item:not(:last-child) {
@@ -213,6 +219,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--second-text-color);
   fill: var(--primary-icon-color);
+  display: none;
   transition: color 250ms var(--timing-function);
 }
 .contact:hover, .contact:focus {
@@ -251,6 +258,37 @@ img {
 }
 .contact__tel:hover, .contact__tel:focus {
   fill: currentColor;
+}
+
+/* -----Мобильное меню----- */
+.mobile-open-btn {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.mobile-menu {
+  position: fixed;
+  z-index: 1;
+  background-color: var(--primary-white-color);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  padding-top: 10px;
+}
+
+.mobile-close-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.mobile-menu__item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
 
 /* Секция постер-герой */
@@ -798,15 +836,26 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  width: 100%;
+  height: 100%;
 }
 
 .example-list__item {
   width: 100%;
-  height: 404px;
+}
+@media screen and (min-width: 768px) {
+  .example-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .example-list__item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .example-list__link {
-  display: inline-block;
+  display: block;
 }
 .example-list__link:hover, .example-list__link:focus {
   background: #ffffff;

@@ -5,6 +5,8 @@
 	align-items: center;
 	margin-right: 0;
 	padding-right: 0;
+
+	display: none;
 }
 
 .menu__item:not(:last-child) {
@@ -83,6 +85,8 @@
 	letter-spacing: 0.02em;
 	color: var(--second-text-color);
 	fill: var(--primary-icon-color);
+
+	display: none;
 
 	transition: color 250ms var(--timing-function);
 	&:hover,

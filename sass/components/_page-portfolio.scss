@@ -48,15 +48,22 @@
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
+	width: 100%;
+	height: 100%;
 }
 
 .example-list__item {
 	width: 100%;
-	height: 404px;
+	@include tablet {
+		width: calc((100% - 30px) / 2);
+	}
+	@include desktop {
+		width: calc((100% - 60px) / 3);
+	}
 }
 
 .example-list__link {
-	display: inline-block;
+	display: block;
 	&:hover,
 	&:focus {
 		background: #ffffff;
