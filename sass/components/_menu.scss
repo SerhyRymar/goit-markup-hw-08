@@ -1,12 +1,20 @@
 /* Меню сайта */
 
 .menu {
-	display: flex;
+	display: none;
 	align-items: center;
 	margin-right: 0;
 	padding-right: 0;
 
-	display: none;
+	@include tablet {
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@include desktop {
+		display: flex;
+	}
 }
 
 .menu__item:not(:last-child) {
@@ -74,8 +82,9 @@
 /* Меню контактов */
 
 .contact {
-	display: flex;
+	display: none;
 	align-items: center;
+	justify-content: center;
 
 	margin-left: auto;
 
@@ -86,18 +95,32 @@
 	color: var(--second-text-color);
 	fill: var(--primary-icon-color);
 
-	display: none;
-
 	transition: color 250ms var(--timing-function);
 	&:hover,
 	&:focus {
 		color: var(--accent-color);
 	}
+
+	@include tablet {
+		display: block;
+	}
+
+	@include desktop {
+		display: flex;
+	}
 }
 .contact__item {
-	display: flex;
-	&:not(:last-child) {
-		margin-right: 50px;
+	@include tablet {
+		display: block;
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+	@include desktop {
+		display: flex;
+		&:not(:last-child) {
+			margin-right: 50px;
+		}
 	}
 }
 
@@ -110,24 +133,32 @@
 }
 
 .contact__mail {
-	width: 16px;
-	height: 12px;
 	margin-right: 10px;
 	fill: currentColor;
 	&:hover,
 	&:focus {
 		fill: currentColor;
 	}
+	@include tablet {
+		width: 14px;
+		height: 10px;
+	}
+	@include desktop {
+		width: 16px;
+		height: 12px;
+	}
 }
 
 .contact__tel {
-	width: 10px;
-	height: 12px;
 	margin-right: 10px;
 	fill: currentColor;
 	&:hover,
 	&:focus {
 		fill: currentColor;
+	}
+	@include tablet {
+		width: 10px;
+		height: 14px;
 	}
 }
 
@@ -136,6 +167,17 @@
 .mobile-open-btn {
 	margin-left: auto;
 	margin-right: 10px;
+	fill: var(--primary-text-color);
+	background-color: var(--primary-white-color);
+	border: none;
+
+	@include tablet {
+		display: none;
+	}
+
+	@include desktop {
+		display: none;
+	}
 }
 .mobile-menu {
 	position: fixed;
@@ -147,7 +189,6 @@
 	height: 100vh;
 	padding-top: 10px;
 	> .mobile-menu__container {
-		height: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -161,9 +202,17 @@
 	display: block;
 	margin-left: auto;
 	margin-right: 15px;
+	fill: var(--primary-text-color);
+	background-color: var(--primary-white-color);
+	border: none;
+	&:hover,
+	&:focus {
+		fill: var(--accent-color);
+	}
 }
 
 .mobile-menu__item {
+	margin-left: 40px;
 	margin-bottom: 32px;
 }
 .mobile-menu__nav {
@@ -172,6 +221,14 @@
 	line-height: 1.18;
 	letter-spacing: 0.02em;
 	color: var(--primary-text-color);
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
+}
+.mobile-contact {
+	margin-top: 302px;
+	margin-left: 40px;
 }
 .mobile-contact__item {
 	margin-bottom: 32px;
@@ -190,6 +247,26 @@
 	letter-spacing: 0.02em;
 	color: var(--second-text-color);
 }
+
+.mobile-social__list {
+	margin-top: 64px;
+	margin-left: 30px;
+}
 .mobile-social__item {
 	display: inline;
+	padding-right: 10px;
+	padding-left: 10px;
+
+	&:not(:last-child)::after {
+		content: " ";
+		border-right: 1px solid rgba(32, 19, 205, 0.2);
+		padding-left: 10px;
+	}
+}
+.mobile-social__link {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.22;
+	letter-spacing: 0.02em;
+	color: var(--accent-color);
 }
