@@ -191,7 +191,15 @@
 					<h2 class="team__title">Наша команда</h2>
 					<ul class="team__list">
 						<li class="team__item">
-							<img src="./images/igor.jpg" alt="Дизайнер продукта"/>
+							<picture>
+								<source srcset="./images/igor-desk-1x.jpg 1x, ./images/igor-desk-2x.jpg 2x"
+								media="(min-width:1200px)"/>
+								<source srcset="./images/igor-tab-1x.jpg 1x, ./images/igor-tab-2x.jpg 2x"
+								media="(min-width:768px)" />
+								<source srcset="./images/igor-mob-1x.jpg 1x, ./images/igor-mob-2x.jpg 2x"
+								media="(max-width:767px)" />
+                            <img src="./images/igor-mob-1x.jpg" alt="Дизайнер продукта" width="450" height="460"/>
+							</picture>
 							<div class="employees">
 								<h3 class="employees__name">Ігор Дем'яненко</h3>
 								<p class="employees__job">Product Designer</p>
@@ -224,7 +232,15 @@
 							</div>
 						</li>
 						<li class="team__item">
-							<img src="./images/olga.jpg" alt="Фронтенд-разработчик" />
+							    <picture>
+								<source srcset="./images/olga-desk-1x.jpg 1x, ./images/olga-desk-2x.jpg 2x"
+								media="(min-width:1200px)"/>
+								<source srcset="./images/olga-tab-1x.jpg 1x, ./images/olga-tab-2x.jpg 2x"
+								media="(min-width:768px)" />
+								<source srcset="./images/olga-mob-1x.jpg 1x, ./images/olga-mob-2x.jpg 2x"
+								media="(max-width:767px)" />
+                            <img src="./images/olga-mob-1x.jpg" alt="Фронтенд-разработчик" width="450" height="460"/>
+							</picture>
 							<div class="employees">
 								<h3 class="employees__name">Ольга Рєпіна</h3>
 								<p class="employees__job">Frontend Developer</p>
@@ -257,7 +273,15 @@
 							</div>
 						</li>
 						<li class="team__item">
-							<img src="./images/nikolay.jpg" alt="Маркетинг" />
+								<picture>
+								<source srcset="./images/nikolay-desk-1x.jpg 1x, ./images/nikolay-desk-2x.jpg 2x"
+								media="(min-width:1200px)"/>
+								<source srcset="./images/nikolay-tab-1x.jpg 1x, ./images/nikolay-tab-2x.jpg 2x"
+								media="(min-width:768px)" />
+								<source srcset="./images/nikolay-mob-1x.jpg 1x, ./images/nikolay-mob-2x.jpg 2x"
+								media="(max-width:767px)" />
+                            <img src="./images/nikolay-mob-1x.jpg" alt="Маркетинг" width="450" height="460"/>
+							</picture>
 							<div class="employees">
 								<h3 class="employees__name">Микола Тарасов</h3>
 								<p class="employees__job">Marketing</p>
@@ -289,7 +313,15 @@
 							</div>
 						</li>
 						<li class="team__item">
-							<img src="./images/mikhail.jpg" alt="UL Дизайнер"/>
+							<picture>
+								<source srcset="./images/mikhail-desk-1x.jpg 1x, ./images/mikhail-desk-2x.jpg 2x"
+								media="(min-width:1200px)"/>
+								<source srcset="./images/mikhail-tab-1x.jpg 1x, ./images/mikhail-tab-2x.jpg 2x"
+								media="(min-width:768px)" />
+								<source srcset="./images/mikhail-mob-1x.jpg 1x, ./images/mikhail-mob-2x.jpg 2x"
+								media="(max-width:767px)" />
+                            <img src="./images/mikhail-mob-1x.jpg" alt="UL Дизайнер" width="450" height="460"/>
+							</picture>
 							<div class="employees">
 								<h3 class="employees__name">Михайло Єрмаков</h3>
 								<p class="employees__job">UI Designer</p>
@@ -472,7 +504,7 @@
 					<label for="userpolicy" class="check-text" >
 					<span> <svg class="check-icon" width="16" height="15"> 
 					<use href="./images/icons.svg#icon-check"></use></svg>
-				    </span>Погоджуюся з розсилкою та приймаю   <a href="#" target="_blank" rel="noopener noreferrer"class="check-text-link">Умови договору</a></label>
+				    </span>Погоджуюся з розсилкою та приймаю <a href="#" target="_blank" rel="noopener noreferrer"class="check-text-link"> Умови договору</a></label>
                     </div>
 					<button type="submit" class="btn-submit">Відправити</button>
 
