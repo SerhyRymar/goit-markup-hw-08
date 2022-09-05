@@ -807,6 +807,7 @@ img {
 }
 
 .footer__conteiner {
+  display: flex;
   align-items: baseline;
 }
 
@@ -820,8 +821,8 @@ img {
 }
 
 .address__list {
-  display: block;
   font-style: normal;
+  display: block;
 }
 
 .address__item {

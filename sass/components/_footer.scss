@@ -5,11 +5,8 @@
 	padding-bottom: 60px;
 }
 .footer__conteiner {
-	justify-content: center;
-	@include desktor {
-		display: flex;
-		align-items: baseline;
-	}
+	display: flex;
+	align-items: baseline;
 }
 .footer__logo {
 	display: block;
@@ -19,8 +16,8 @@
 	color: var(--primary-white-color);
 }
 .address__list {
-	display: block;
 	font-style: normal;
+	display: block;
 }
 .address__item {
 	display: flex;
@@ -42,9 +39,7 @@
 
 .footer-socials {
 	display: block;
-	@include desktor {
-		margin-left: 70px;
-	}
+	margin-left: 70px;
 }
 .footer-socials__title {
 	font-weight: 700;
