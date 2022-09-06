@@ -313,6 +313,9 @@ img {
   background-color: var(--primary-white-color);
   border: none;
 }
+.mobile-open-btn:hover, .mobile-open-btn:focus {
+  fill: var(--accent-color);
+}
 @media screen and (min-width: 768px) {
   .mobile-open-btn {
     display: none;
@@ -326,7 +329,7 @@ img {
 
 .mobile-menu {
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   background-color: var(--primary-white-color);
   top: 0;
   left: 0;
@@ -335,9 +338,20 @@ img {
   padding-top: 10px;
 }
 .mobile-menu > .mobile-menu__container {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mobile-menu {
+    display: none;
+  }
 }
 
 .mobile-menu {
@@ -354,6 +368,16 @@ img {
 }
 .mobile-close-btn:hover, .mobile-close-btn:focus {
   fill: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .mobile-close-btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mobile-close-btn {
+    display: none;
+  }
 }
 
 .mobile-menu__item {
@@ -373,7 +397,6 @@ img {
 }
 
 .mobile-contact {
-  margin-top: 302px;
   margin-left: 40px;
 }
 
@@ -396,10 +419,13 @@ img {
   letter-spacing: 0.02em;
   color: var(--second-text-color);
 }
+.mobile-contact__mail:hover, .mobile-contact__mail:focus {
+  color: var(--accent-color);
+}
 
 .mobile-social__list {
-  margin-top: 64px;
   margin-left: 30px;
+  margin-bottom: 48px;
 }
 
 .mobile-social__item {
@@ -1121,6 +1147,11 @@ img {
   width: 100%;
   height: 100%;
 }
+@media screen and (min-width: 768px) {
+  .example-list {
+    flex-grow: 1;
+  }
+}
 
 .example-list__item {
   width: 100%;
@@ -1143,6 +1174,13 @@ img {
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(37, 17, 17, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (min-width: 768px) {
+  .example-list__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }
 
 .example-list__link:hover .progect,
