@@ -3,25 +3,56 @@
 	background: var(--accent-section-color);
 	padding-top: 60px;
 	padding-bottom: 60px;
+
+	@include tablet {
+		display: block;
+		flex-direction: column;
+		align-items: center;
+	}
+	@include desktop {
+		display: flex;
+	}
 }
 .footer__conteiner {
-	display: flex;
-	align-items: baseline;
+	@include desktop {
+		display: flex;
+		align-items: baseline;
+	}
 }
+.footer__thumb {
+	@include tablet {
+		display: flex;
+		align-items: flex-start;
+	}
+}
+
 .footer__logo {
-	display: block;
+	display: flex;
+	justify-content: center;
 	margin-bottom: 20px;
+
+	@include desktop {
+		justify-content: start;
+	}
 }
 .logo--white-color {
 	color: var(--primary-white-color);
 }
+
 .address__list {
-	font-style: normal;
 	display: block;
+	font-style: normal;
+	align-items: center;
 }
 .address__item {
 	display: flex;
-	margin-bottom: 9px;
+	margin-bottom: 8px;
+	justify-content: center;
+
+	@include desktop {
+		justify-content: start;
+		margin-bottom: 9px;
+	}
 }
 .adress__text {
 	display: block;
@@ -39,21 +70,45 @@
 
 .footer-socials {
 	display: block;
-	margin-left: 70px;
+	margin-left: auto;
+
+	@include desktop {
+		margin-left: 70px;
+	}
 }
 .footer-socials__title {
+	display: flex;
+	justify-content: center;
+
+	margin-top: 60px;
+	margin-bottom: 20px;
+
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: var(--primary-white-color);
-	margin-bottom: 20px;
+
+	@include tablet {
+		margin-top: 0;
+	}
+	@include desktop {
+		justify-content: start;
+		margin-top: 10px;
+	}
 }
 .footer-social__list {
 	display: flex;
 	justify-content: center;
 	gap: 10px;
+	margin-bottom: 60px;
+	@include tablet {
+		margin-bottom: 0;
+	}
+	@include desktop {
+		margin-bottom: 0;
+	}
 }
 .footer-social__link {
 	width: 44px;
@@ -80,11 +135,23 @@
 
 .subscription {
 	display: block;
-	margin-left: 73px;
+	@include tablet {
+		margin-top: 60px;
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: center;
+	}
+	@include desktop {
+		margin-left: 73px;
+		margin-top: 0;
+		margin-right: 0;
+	}
 }
 .subscription__title {
 	display: flex;
 	margin-bottom: 20px;
+
+	justify-content: center;
 
 	font-weight: 700;
 	font-size: 14px;
@@ -92,14 +159,33 @@
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: var(--primary-white-color);
+
+	@include desktop {
+		justify-content: start;
+	}
+}
+
+.subscription__box {
+	align-items: center;
+
+	@include desktop {
+		display: flex;
+		align-items: start;
+	}
 }
 .subscription__label {
 	background: #2f303a;
 }
 .subscription__input {
+	display: block;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+
 	width: 358px;
 	height: 50px;
 	padding-left: 16px;
+
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
@@ -108,20 +194,29 @@
 	&:hover {
 		border-color: 1px solid rgba(255, 255, 255, 0.3);
 	}
+	@include tablet {
+		width: 450px;
+	}
+	@include desktop {
+		display: flex;
+		width: 358px;
+	}
 }
 .subscription__input:focus,
 .subscription__input:hover {
 	border-color: 1px solid rgba(255, 255, 255, 0.3);
 }
 .subscription__button {
-	display: inline-flex;
+	display: flex;
 	align-items: center;
 
-	margin-left: 12px;
 	width: 200px;
 	height: 50px;
 	padding-left: 28px;
 	padding-right: 28px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
 
 	font-weight: 700;
 	font-size: 16px;
@@ -133,6 +228,12 @@
 	border: none;
 	color: var(--primary-white-color);
 	cursor: pointer;
+
+	@include desktop {
+		display: inline-flex;
+		margin-top: 0;
+		margin-left: 40px;
+	}
 }
 .subscription__icon {
 	display: inline-block;
